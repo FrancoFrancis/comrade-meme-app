@@ -45,24 +45,16 @@ code {
   }
 
   .meme--image {
-    /* position: relative; */
-    /* position: absolute; */
-    /* margin-left: 30px; */
     width: 100%;
   }
   .meme--image--container {
     height: 100%;
-    /* background: #0e0e0e; */
-    /* display: none; */
   }
 
   .meme--image--container .bottom {
     bottom: 70px;
   }
 
-  .vawulence {
-    margin-top: 60px;
-  }
 }
 
 /* MEME APP */
@@ -84,6 +76,8 @@ nav {
 }
 
 img {
+  /* position: absolute; */
+  position: relative;
   height: 100%;
   /* margin: 40px; */
 }
@@ -91,10 +85,8 @@ img {
 .meme-body {
   background: rgb(65, 65, 65);
   max-width:450px;
-  /* width: 100vw; */
-  height: 200vh;
+  height: 150vh;
   padding: 10px;
-  /* position: absolute; */
   margin: 0 auto;
 }
 
@@ -119,7 +111,7 @@ img {
   align-items: center;
   margin-bottom: 30px;
   gap: 27px;
-  margin-left: -40px;
+  /* margin-left: -40px; */
 }
 
 .form--input {
@@ -138,7 +130,7 @@ img {
 .form--button {
   font-family: 'Poppins', sans-serif;
   border-radius: 15px;
-  width: 75%;
+  width: 83%;
   padding: 15px;
   border: none;
   outline: none;
@@ -157,12 +149,15 @@ img {
 }
 
 .meme--image--container {
-  position: absolute;
+  position: relative;
+  right: -10px;
   max-width: 450px;
   height: 700px;
-
   /* background: #1fbd6b; */
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
+  /* margin-right:-50px ; */
+  /* display: none; */
+  margin: 0 auto;
 }
 
 .meme--image {

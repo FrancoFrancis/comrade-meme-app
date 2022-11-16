@@ -36,14 +36,14 @@ export default function Meme() {
     return( 
         <div className="meme-body">
             
-            <h4 className="tip"><i class="fa-sharp fa-solid fa-circle-exclamation"></i>Tip: Type in joke on part of meme you would want it 
-                to sit!👇🏾
+            <h4 className="tip"><i class="fa-sharp fa-solid fa-circle-exclamation"></i>Tip: Hey boss ( 👋😄 )! Type in joke on part of meme you would want it 
+                to sit !👇
         
             </h4>
             <div className="form">
                 <input
                 className="form--input" 
-                placeholder="At the top " 
+                placeholder="top " 
                 type="text"
                 value={meme.topText}
                 onChange={handleChange}
@@ -51,7 +51,7 @@ export default function Meme() {
                 />
                 <input 
                 className="form--input" 
-                placeholder="At the bottom" 
+                placeholder="bottom" 
                 type="text"
                 value={meme.bottomText}
                 onChange={handleChange}
@@ -79,9 +79,6 @@ export default function Meme() {
                 <h1 className="meme--text top">{meme.topText}</h1>
                 <h2 className="meme--text bottom">{meme.bottomText}</h2>
                 
-                <div className="vawulence">
-                <h2>FRANCIS 2022</h2>
-            </div>
             </div>
 
             
@@ -94,7 +91,7 @@ export default function Meme() {
 // NOTE I am using a Local Data file to get my custom images, but we can also get 
 random images from an API
 
-// When using the effect hook to access an API we shoould initialize state
+// When using the effect hook to access an API we should initialize state
 as an EMPTY ARRAY
 
 // To use an API we are to use the use effect hook to access an API because any 
@@ -109,8 +106,8 @@ data outside of React is a side effect
 
 // NOTE on why the dependencies Array is left empty
 
-// We are saving all the memes in state, so we wouls want the 
-API request to ahppen as soon as the component loads, then access
+// We are saving all the memes in state, so we would want the 
+API request to happen as soon as the component loads, then access
 a random image to display because all our images have been saved 
 in state. Nothing is changing in state to enable us make another 
 API request so since there are no dependencies for this effect
